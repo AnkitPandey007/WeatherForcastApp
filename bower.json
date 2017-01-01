@@ -1,0 +1,28 @@
+{
+  "name": "weatherForcastApp",
+  "main": "app.js",
+  "authors": [
+    "Ankitpandey007 <ankitpandey.tech@gmail.com>"
+  ],
+  "description": "forcasting the app",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.2",
+    "angular-resource": "^1.6.1",
+    "angular": "angularjs#^1.6.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

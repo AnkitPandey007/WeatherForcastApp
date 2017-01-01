@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherApp">
+    <head>
+        <title>AngularJS Weather Forecast SPA</title>
+        <base href="/">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div ng-include="'views/header.html'"></div>
+
+        <div class="container">
+
+            <ui-view></ui-view>
+		</div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="js/routes/routes.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/controllers/controllers.js"></script>
+    <script src="js/directives/directives.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.weather-line{
+    font-size: 1.1em;
+}
+.row.temp{
+    margin: 5px;
+}
+
+.row.temp .main-desc{
+    background:#c0c0c0;
+}
