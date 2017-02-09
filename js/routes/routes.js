@@ -1,10 +1,10 @@
 //CONFIG
 weatherApp.config(config);
 
-function config($stateProvider, $locationProvider){
+function config($stateProvider, $urlRouterProvider, $locationProvider, ChartJsProvider){
 	$stateProvider
 	 	.state('home', {
-			url:'/',
+			url:'/home',
 	 		templateUrl:'views/home.html',
 	 		controller:'homeController'
 	 	})
@@ -19,5 +19,9 @@ function config($stateProvider, $locationProvider){
 	 		controller:'forcastController'
 	 	});
 
-	$locationProvider.html5Mode(true);
+	$urlRouterProvider.otherwise('/home');
+	
+	ChartJsProvider.setOptions({ colors : [ '#803690', '#00ADF9', '#DCDCDC', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'],
+	chartColors: ['#DCDCDC', '#949FB1'], responsive: false, showLines: true, showSeries: true});
+	 
 }

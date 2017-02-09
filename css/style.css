@@ -8,3 +8,8 @@
 .row.temp .main-desc{
     background:#c0c0c0;
 }
+
+
+body{
+	background-image: url("/images/weather.jpg"); 
+}
